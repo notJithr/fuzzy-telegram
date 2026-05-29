@@ -3,8 +3,8 @@
 Name: Jaiden Ithier  
 Student Number: 32831857  
 Domain: https://jithr.au  
-Server IP Address: 20.213.188.49
-GitHub Repository: https://github.com/notJithr/fuzzy-telegram
+Server IP Address: 20.213.188.49  
+GitHub Repository: https://github.com/notJithr/fuzzy-telegram  
 Video Explainer: [add later]
 
 ## Project Overview

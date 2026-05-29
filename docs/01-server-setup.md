@@ -22,7 +22,7 @@ sudo apt upgrade -y
 
 ## Installing Required Packages
 
-bash sudo apt install curl git build-essential libssl-dev libreadline-dev zlib1g-dev libsqlite3-dev sqlite3 nodejs npm nginx -y 
+sudo apt install curl git build-essential libssl-dev libreadline-dev zlib1g-dev libsqlite3-dev sqlite3 nodejs npm nginx -y 
 
 ### Explanation
 
@@ -30,12 +30,14 @@ The following packages were installed:
 
 Package | Purpose
 ---
-curl | Download files/scripts from the internet
-git | Version control and GitHub integration
-build-essential | Required compilation tools
-nginx | Web server / reverse proxy
-nodejs + npm | JavaScript runtime required by Rails
-sqlite3 | Database used for development
+| Package | Purpose |
+|----------|----------|
+| curl | Download files/scripts from the internet |
+| git | Version control and GitHub integration |
+| build-essential | Required compilation tools |
+| nginx | Web server / reverse proxy |
+| nodejs + npm | JavaScript runtime required by Rails |
+| sqlite3 | Database used for development |
 
 ---
 
