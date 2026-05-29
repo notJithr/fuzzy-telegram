@@ -106,9 +106,3 @@ Rails 8.x.x
 ![rbenv Install](screenshots/rbenv-install.png)
 ![ruby Install](screenshots/ruby-install.png)
 ![rails Install](screenshots/rails-install.png)
-
----
-
-## Notes / Issues Encountered
-
-(Add any installation problems or dependency issues encountered during setup.)
