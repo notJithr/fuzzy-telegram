@@ -1,0 +1,40 @@
+<h1>Daily Deal Summary Report</h1>
+
+<p>This page provides a live summary of current deal activity from the Ruby on Rails database.</p>
+
+<ul>
+  <li><strong>Total deals this month:</strong> <%= @total_this_month %></li>
+  <li><strong>Pending deals:</strong> <%= @pending_deals.count %></li>
+  <li><strong>Finalised deals:</strong> <%= @finalised_deals.count %></li>
+  <li><strong>Fallovers:</strong> <%= @fallovers.count %></li>
+  <li><strong>Delayed deals:</strong> <%= @delayed_deals.count %></li>
+</ul>
+
+<h2>Delayed Deals</h2>
+
+<% if @delayed_deals.any? %>
+  <table>
+    <thead>
+      <tr>
+        <th>Deal Date</th>
+        <th>Customer</th>
+        <th>Vehicle</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @delayed_deals.each do |deal| %>
+        <tr>
+          <td><%= deal.deal_date %></td>
+          <td><%= deal.customer_name %></td>
+          <td><%= deal.vehicle_purchased %></td>
+          <td><%= deal.status %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p>No delayed deals currently.</p>
+<% end %>
+
+<p><%= link_to "Back to Dashboard", deals_path %></p>
