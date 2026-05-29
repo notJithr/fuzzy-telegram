@@ -1,16 +1,86 @@
-<p style="color: green"><%= notice %></p>
+<h1>Vehicle Deal Portal</h1>
 
-<% content_for :title, "Deals" %>
+<div class="dashboard">
+  <div class="card">
+    <h2><%= @total_this_month %></h2>
+    <p>Deals This Month</p>
+  </div>
 
-<h1>Deals</h1>
+  <div class="card">
+    <h2><%= @pending_deals.count %></h2>
+    <p>Pending Deals</p>
+  </div>
 
-<div id="deals">
-  <% @deals.each do |deal| %>
-    <%= render deal %>
-    <p>
-      <%= link_to "Show this deal", deal %>
-    </p>
-  <% end %>
+  <div class="card">
+    <h2><%= @finalised_deals.count %></h2>
+    <p>Finalised Deals</p>
+  </div>
+
+  <div class="card">
+    <h2><%= @fallovers.count %></h2>
+    <p>Fallovers</p>
+  </div>
 </div>
 
-<%= link_to "New deal", new_deal_path %>
+<h2>Delayed Deals</h2>
+
+<% if @delayed_deals.any? %>
+  <ul>
+    <% @delayed_deals.each do |deal| %>
+      <li>
+        <strong><%= deal.customer_name %></strong> -
+        <%= deal.vehicle_purchased %> -
+        <%= deal.status %> -
+        <%= link_to "View", deal %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No delayed deals.</p>
+<% end %>
+
+<hr>
+
+<p><%= link_to "Add New Deal", new_deal_path %></p>
+
+<h2>All Deals</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Deal #</th>
+      <th>Stock #</th>
+      <th>Salesperson</th>
+      <th>Type</th>
+      <th>Customer</th>
+      <th>Vehicle</th>
+      <th>Trade</th>
+      <th>Contact</th>
+      <th>Status</th>
+      <th>EDD</th>
+      <th>Notes</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deals.each do |deal| %>
+      <tr>
+        <td><%= deal.deal_date %></td>
+        <td><%= deal.deal_number %></td>
+        <td><%= deal.stock_number %></td>
+        <td><%= deal.salesperson %></td>
+        <td><%= deal.vehicle_type %></td>
+        <td><%= deal.customer_name %></td>
+        <td><%= deal.vehicle_purchased %></td>
+        <td><%= deal.has_trade ? "Yes" : "No" %></td>
+        <td><%= deal.contact_number %></td>
+        <td><%= deal.status %></td>
+        <td><%= deal.estimated_delivery_date %></td>
+        <td><%= deal.notes %></td>
+        <td><%= link_to "View", deal %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
