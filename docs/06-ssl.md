@@ -27,8 +27,6 @@ Certificate Path: /etc/letsencrypt/live/jithr.au/fullchain.pem
 Private Key Path: /etc/letsencrypt/live/jithr.au/privkey.pem
 ```
 
-This confirms that a valid SSL certificate is installed for the domain.
-
 ---
 
 ## Certificate Files

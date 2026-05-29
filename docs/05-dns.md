@@ -2,7 +2,7 @@
 
 ## Overview
 
-The domain `jithr.au` is used to provide a user-friendly public address for the Azure-hosted Ruby on Rails application.
+The domain `jithr.au` is used to provide a user-friendly public address for the Azure-hosted Ruby on Rails application.  This is not intended for long term use, however, I already owned the domain and made life easy.
 
 DNS management is handled through Squarespace DNS.
 

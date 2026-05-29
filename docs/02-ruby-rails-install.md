@@ -14,8 +14,6 @@ The following packages were installed before setting up Ruby.
 sudo apt install libyaml-dev libgmp-dev libffi-dev -y
 ```
 
-### Explanation
-
 These libraries are required by Ruby gems and Rails components during installation and runtime.
 
 | Package | Purpose |
@@ -34,8 +32,6 @@ rbenv was used to manage Ruby versions.
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-installer | bash
 ```
 
-### Explanation
-
 rbenv allows Ruby versions to be installed and managed independently without affecting the system-wide environment.
 
 ---
@@ -49,8 +45,6 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
 source ~/.bashrc
 ```
-
-### Explanation
 
 These commands ensure rbenv loads automatically when opening a new terminal session.
 
@@ -71,11 +65,7 @@ rbenv global 3.3.0
 ruby -v
 ```
 
-Example output:
-
-```text
-ruby 3.3.0
-```
+![Ruby Version](screenshots/ruby-v.png)
 
 ---
 
@@ -93,11 +83,7 @@ gem install rails
 rails -v
 ```
 
-Example output:
-
-```text
-Rails 8.x.x
-```
+![rails Install](screenshots/rails-install.png)
 
 ---
 
@@ -105,4 +91,3 @@ Rails 8.x.x
 
 ![rbenv Install](screenshots/rbenv-install.png)
 ![ruby Install](screenshots/ruby-install.png)
-![rails Install](screenshots/rails-install.png)

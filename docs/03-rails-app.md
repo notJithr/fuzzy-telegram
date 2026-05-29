@@ -14,8 +14,6 @@ The following command was used to create a new Rails application:
 rails new vehicle-deal-portal
 ```
 
-### Explanation
-
 The `rails new` command generates the complete project structure required for a Ruby on Rails application. This includes application folders, configuration files, database settings and development tools.
 
 ---
@@ -29,8 +27,6 @@ cd vehicle-deal-portal
 rails server -b 0.0.0.0
 ```
 
-### Explanation
-
 The `-b 0.0.0.0` option allows the Rails server to listen on all available network interfaces, enabling access from outside the virtual machine.
 
 ---
@@ -42,8 +38,6 @@ The following command was used to create the initial controller and view:
 ```bash
 rails generate controller Pages home
 ```
-
-### Explanation
 
 This command automatically generated:
 
@@ -70,8 +64,6 @@ Rails.application.routes.draw do
   root "pages#home"
 end
 ```
-
-### Explanation
 
 This configuration ensures visitors are directed to the Home page when accessing the root URL of the application.
 

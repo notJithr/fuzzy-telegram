@@ -26,6 +26,9 @@ Database changes were applied using:
 rails db:migrate
 ```
 
+![db migrate](screenshots/script-dbmigrate.png)
+![Inital Main Screen](screenshots/script-main.png)
+
 ---
 
 ## Deal Information Stored
@@ -84,6 +87,8 @@ rails db:migrate
 
 Uploaded documents are linked directly to individual deals.
 
+![New Deal Form](screenshots/script-newdeal.png)
+
 The system currently supports storing:
 
 - Accepted Offer to Purchase
@@ -95,6 +100,8 @@ The system currently supports storing:
 - Registration Documentation
 
 This functionality provides a central location for paperwork associated with each deal.
+
+![Document Test](screenshots/script-document-test.png)
 
 ---
 
@@ -111,6 +118,8 @@ The dashboard displays:
 - Delayed deals
 
 The dashboard also displays a complete table of all recorded deals.
+
+![Dashboard Build](screenshots/script-dashboard.png)
 
 ---
 
@@ -155,6 +164,8 @@ The report calculates live statistics from the database including:
 
 This functionality demonstrates the use of Ruby to process stored business data and generate useful operational information.
 
+![Summary Live Script](screenshots/script-summary.png)
+
 ---
 
 ## Application Structure
@@ -184,17 +195,6 @@ Testing confirmed that:
 - Dashboard statistics update automatically
 - Delayed deals are detected correctly
 - Reporting page generates live data from the database
-
----
-
-## Screenshots
-
-![db migrate](screenshots/script-dbmigrate.png)
-![Inital Main Screen](screenshots/script-main.png)
-![New Deal Form](screenshots/script-newdeal.png)
-![Document Test](screenshots/script-document-test.png)
-![Dashboard Build](screenshots/script-dashboard.png)
-![Summary Live Script](screenshots/script-summary.png)
 
 ---
 

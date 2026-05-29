@@ -14,7 +14,7 @@ Before this step, the domain `jithr.au` was already pointing to the Azure VM and
 /var/www/html
 ```
 
-The goal of this step was to replace the static HTML website with the Ruby on Rails application.
+The goal of this step was to replace the static HTML website with the Ruby on Rails application.  On a fresh install, you wouldn't need to do this.  Just a step I had to sort out.
 
 ---
 
@@ -57,10 +57,6 @@ server {
     }
 }
 ```
-
----
-
-## Explanation
 
 This configuration performs two main tasks:
 
@@ -118,10 +114,6 @@ cd ~/fuzzy-telegram/vehicle-deal-portal
 rails server -b 127.0.0.1
 ```
 
-### Explanation
-
-Rails was bound to `127.0.0.1` because public web traffic is handled by Nginx. Nginx then forwards requests internally to the Rails server running on port `3000`.
-
 ---
 
 ## Rails Host Configuration
@@ -140,10 +132,6 @@ The following lines were added inside the configuration block:
 config.hosts << "jithr.au"
 config.hosts << "www.jithr.au"
 ```
-
-### Explanation
-
-Rails blocks unknown hostnames by default in development mode. Adding the domain allowed the application to accept requests from `jithr.au`.
 
 ---
 

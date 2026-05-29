@@ -2,7 +2,7 @@
 
 ## Objective
 
-Prepare the Azure VM for hosting a Ruby on Rails web application.
+Prepare a running Azure VM for hosting a Ruby on Rails web application.
 
 ---
 
@@ -14,11 +14,6 @@ The following commands were used to update existing packages and install require
 sudo apt update
 sudo apt upgrade -y
 ```
-
-### Explanation
-
-- `apt update` refreshes the package lists from Ubuntu repositories.
-- `apt upgrade -y` installs the latest available updates automatically.
 
 ---
 
@@ -43,6 +38,10 @@ The following packages were installed:
 | nodejs + npm | JavaScript runtime required by Rails |
 | sqlite3 | Database used for development |
 
+The screenshot below shows the package installation process completing successfully.
+
+![Package Installation](screenshots/app-update.png)
+
 ---
 
 ## Verification
@@ -57,12 +56,4 @@ npm -v
 sqlite3 --version
 ```
 
-Successful output confirmed that all required packages were installed correctly.
-
----
-
-## Screenshot
-
-The screenshot below shows the package installation process completing successfully.
-
-![Package Installation](screenshots/app-update.png)
+![Versions](screenshots/versions.png)
