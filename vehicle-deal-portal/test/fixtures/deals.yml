@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  deal_date: 2026-05-29
+  deal_number: MyString
+  stock_number: MyString
+  salesperson: MyString
+  vehicle_type: MyString
+  customer_name: MyString
+  vehicle_purchased: MyString
+  has_trade: false
+  contact_number: MyString
+  status: MyString
+  estimated_delivery_date: 2026-05-29
+  notes: MyText
+
+two:
+  deal_date: 2026-05-29
+  deal_number: MyString
+  stock_number: MyString
+  salesperson: MyString
+  vehicle_type: MyString
+  customer_name: MyString
+  vehicle_purchased: MyString
+  has_trade: false
+  contact_number: MyString
+  status: MyString
+  estimated_delivery_date: 2026-05-29
+  notes: MyText
